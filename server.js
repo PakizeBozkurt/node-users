@@ -4,6 +4,8 @@ const cors = require("cors");
 
 // Start the express application and save a reference to it in the app variable.
 const app = express();
+
+// Add facility to convert body from a json string into a javascript object automatically.
 app.use(express.json());
 app.use(
   cors({
