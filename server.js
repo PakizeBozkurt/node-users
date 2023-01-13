@@ -14,6 +14,7 @@ app.use(
 );
 const port = 3005;
 
+// Data!
 let users = [
   { id: 1, name: "Pare", email: "pare@mail.com" },
   { id: 2, name: "Bare", email: "bare@mail.com" },
@@ -69,7 +70,7 @@ app.put("/users/:id", (req, res) => {
   res.send(user);
 });
 
-//Server!
+//Server to start listening for requests!
 app.listen(port, () => {
   console.log(`Server is running port on ${port}`);
 });
