@@ -1,6 +1,8 @@
 // Load the 'express' module which makes writing webservers easy.
 const express = require("express");
 const cors = require("cors");
+
+// Start the express application and save a reference to it in the app variable.
 const app = express();
 app.use(express.json());
 app.use(
